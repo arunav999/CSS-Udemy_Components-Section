@@ -33,7 +33,7 @@
         line-height: 1;
       }
 
-      .container{
+      .container {
         width: 500px;
         display: flex;
         align-items: center;
@@ -43,33 +43,57 @@
       }
 
       a {
+        height: 32px;
+        width: 32px;
         text-decoration: none;
         color: #000;
         padding: 8px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
       }
-      
+
+      a:hover {
+        color: #fff;
+        background-color: #087f5b;
+        border-radius: 50%;
+      }
+
       .circle {
         color: #fff;
         background-color: #087f5b;
         border-radius: 50%;
       }
-      
+
       button {
         width: 32px;
         height: 32px;
         background-color: #fff;
         border: 1px solid #087f5b;
         border-radius: 25px;
+        cursor: pointer;
 
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+      }
+
+      button:hover,
+      .btn-icon:hover {
+        background-color: #087f5b;
+        border: none;
+        stroke: #fff;
       }
 
       .btn-icon {
         width: 24px;
         height: 24px;
         stroke: #087f5b;
+      }
+
+      span {
+        cursor: pointer;
       }
     </style>
   </head>
